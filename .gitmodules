@@ -1,0 +1,3 @@
+[submodule "servicioexterno"]
+	path = servicioexterno
+	url = https://gitlab.guatemaladigital.net/compartido/servicioexterno.git
