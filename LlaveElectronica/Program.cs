@@ -10,8 +10,8 @@ using wsGD;
 class Program
 {
     private static Timer _timer;
-    private static readonly TimeSpan Intervalo = TimeSpan.FromHours(24);
-    //private static readonly TimeSpan Intervalo = TimeSpan.FromSeconds(30);
+    //private static readonly TimeSpan Intervalo = TimeSpan.FromHours(24);
+    private static readonly TimeSpan Intervalo = TimeSpan.FromSeconds(15);
     static void Main(string[] args)
     {
         // Configura el temporizador para ejecutar el método cada 24 horas
@@ -89,7 +89,7 @@ class Program
 
             }
 
-            client.EnviarAlertaSlack(mensaje.ToString(), "Días restantes para que finalice llave electrónica", nombreAlerta, 98, "Resoluciones GD", color);
+            client.EnviarAlertaSlack(mensaje.ToString(), "Días restantes para que finalice llave electrónica", nombreAlerta, 19, "Resoluciones GD", color);
         }
     }
 

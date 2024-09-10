@@ -6,8 +6,8 @@ namespace LlaveElectronica
 {
     internal class Conexion
     {
-        private readonly string connectionString = "User ID=WRodriguez;Database=GuatemalaDigital;PASSWORD=Guate1234;server=guatemaladigital.org;Connect Timeout=30";
-
+      
+        private readonly string connectionString = Environment.GetEnvironmentVariable("ConnectionStrings:GD_DB");
         public DataTable EjecutaQueryDT(string query, ref DataTable dt)
         {
             dt.Clear();
